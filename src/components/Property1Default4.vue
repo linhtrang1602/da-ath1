@@ -1,0 +1,34 @@
+<template>
+  <div :class="$style.property1default">
+    <div :class="$style.classifyNow">classify now</div>
+  </div>
+</template>
+<script>
+  import { defineComponent, ref } from "vue";
+
+  export default defineComponent({
+    name: "Property1Default4",
+  });
+</script>
+<style module>
+  .classifyNow {
+    position: relative;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .property1default {
+    border-radius: var(--br-mini);
+    background-color: var(--color-forestgreen);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-3xs) var(--padding-xl);
+    text-align: left;
+    font-size: var(--medium-18-spcline35-size);
+    color: var(--color-white);
+    font-family: var(--medium-18-spcline35);
+  }
+</style>
